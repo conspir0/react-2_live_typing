@@ -1,11 +1,30 @@
 class App extends React.Component {
-  state = {}
+  state = {
+    text: ''
+  }
+
+  inputHandler = (e) => {
+    this.setState({
+      text: e.target.value
+    })
+  }
 
   render() {
     return (
       <React.Fragment>
         <div className="container">
-          Hello World
+          <input
+            type="text"
+            className="input-text"
+            placeholder="Type here"
+            value={this.state.text}
+            onChange={this.inputHandler}
+          />
+          <div
+            className="result-container"
+          >
+            {this.state.text}
+          </div>
         </div>
       </React.Fragment>
     )

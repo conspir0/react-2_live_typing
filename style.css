@@ -37,15 +37,30 @@ body {
   cursor: pointer;
 }
 
+.input-text {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: #FFFFFF;
+  color: rgb(72, 126, 176);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 15px;
+  outline: none;
+}
+
 .result-container {
   max-width: 300px;
-  min-height: 80px;
-  padding: 30px 50px;
+  min-height: 85px;
+  padding: 30px;
   border-radius: 5px;
   background: #FFFFFF;
   color: rgb(72, 126, 176);
   font-size: 20px;
   font-weight: 800;
-  line-height: 20px;
+  line-height: 25px;
   text-align: center;
+  word-break: break-all;
+  letter-spacing: 1px;
 }
